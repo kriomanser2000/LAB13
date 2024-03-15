@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest</title>
+    <link rel="stylesheet" href="quest.css">
+</head>
+<body>
+    <h1>Create Test</h1>
+    <form id="test-form">
+        <label for="question">Question: </label><br>
+        <input type="text" id="question" name="question" required><br>
+        <label for="correct-answer">Correct Answer: </label><br>
+        <input type="text" id="correct-answer" name="correct-answer" required><br>
+        <label for="incorrect-answer">Incorrect Answer: </label><br>
+        <input type="text" id="incorrect-answer" name="incorrect-answer" required><br>
+        <button type="button" onclick="addQuestion()">Add Question</button>
+    </form>
+    <h2>Question List</h2>
+    <ul id="question-list" class="question-list"></ul>
+    <script src="quest.js"></script>
+</body>
+</html>
